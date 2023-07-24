@@ -1,0 +1,22 @@
+body {
+    background-color: aqua;
+}
+
+#fishSection {
+  border: solid 5px navy;
+}
+
+#martinsFish {
+  display: flex;
+  flex-wrap: wrap;
+
+.fishCard {
+  padding: 5px;
+  border: solid 3px navy;
+  margin: 10 px;
+  width: 150px;
+}
+
+.fish-image {
+  width: 70%;
+}
