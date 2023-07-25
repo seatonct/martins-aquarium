@@ -5,6 +5,20 @@ body {
 h1 {
   color: seashell;
   text-shadow: 0 0 3px navy;
+  text-align: center;
+}
+
+#main {
+  display: flex;
+}
+
+#mainComponents {
+  width: 70%;
+}
+
+aside {
+  width: 25%;
+  align-content: end;
 }
 
 #fishSection {
