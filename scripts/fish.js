@@ -21,39 +21,46 @@ export const FishList = (fishArray) => {
   return htmlString;
 };
 
-export const mostHolyFish = () => {
+export const sortFish = () => {
   // 3, 6, 9, 12, etc... fish
-  const holyFish = [];
+  const sortedFish = [];
   const fishes = getFish();
   for (const fish of fishes) {
     if (fish.size % 3 === 0) {
-      holyFish.push(fish);
+      sortedFish.push(fish);
     }
   }
-
-  return holyFish;
-};
-
-export const soldierFish = () => {
-  // 5, 10, 15, 20, 25, etc... fish
-  const soldiers = [];
-  const fishes = getFish();
   for (const fish of fishes) {
     if (fish.size % 5 === 0) {
-      soldiers.push(fish);
+      sortedFish.push(fish);
     }
   }
-  return soldiers;
-};
-
-export const nonHolyFish = () => {
-  // Any fish not a multiple of 3 or 5
-  const regularFish = [];
-  const fishes = getFish();
   for (const fish of fishes) {
     if (fish.size % 3 != 0 && fish.size % 5 != 0) {
-      regularFish.push(fish);
+      sortedFish.push(fish);
     }
   }
-  return regularFish;
+  return sortedFish;
 };
+
+// export const soldierFish = () => {
+//   // 5, 10, 15, 20, 25, etc... fish
+//   const soldiers = [];
+//   const fishes = getFish();
+
+//     }
+//   }
+//   return soldiers;
+// };
+
+// export const nonHolyFish = () => {
+//   // Any fish not a multiple of 3 or 5
+//   const regularFish = [];
+//   const fishes = getFish();
+//   for (const fish of fishes) {
+//     if (fish.size % 3 != 0 && fish.size % 5 != 0) {
+//       regularFish.push(fish);
+//     }
+//   }
+//   return regularFish;
+// };

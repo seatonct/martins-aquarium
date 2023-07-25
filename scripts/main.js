@@ -1,5 +1,5 @@
 import { getFish } from "./database.js";
-import { FishList, mostHolyFish, soldierFish, nonHolyFish } from "./fish.js";
+import { FishList, sortFish } from "./fish.js";
 import { travelTipList } from "./tips.js";
 import { locationsList } from "./locations.js";
 import { tankTipList } from "./tankMaintenance.js";
@@ -12,8 +12,7 @@ for (const fish of allFish) {
 
 const fishCollection = document.querySelector("#martinsFish");
 
-fishCollection.innerHTML =
-  FishList(mostHolyFish()) + FishList(soldierFish()) + FishList(nonHolyFish());
+fishCollection.innerHTML = FishList(sortFish());
 
 const martinsTravelTips = document.querySelector("#travelTipEl");
 
