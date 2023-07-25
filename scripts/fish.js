@@ -1,16 +1,11 @@
-// Import the function that returns a copy of the fish array
 import { getFish } from "./database.js";
 
-export const FishList = () => {
-  // Invoke the function that you imported from the database module
-  const fishes = getFish();
+export const FishList = (fishArray) => {
+  // const fishes = getFish();
 
-  // Start building a string filled with HTML syntax
   let htmlString = '<article class="fishList">';
 
-  // Create HTML representations of each fish here
-  for (const fish of fishes) {
-    // Why is there a backtick used for this string?
+  for (const fish of fishArray) {
     htmlString += `<section class="fishCard">
             <div><img class="fish-image" src="${fish.image}" /></div>
             <div class="fish__name">${fish.name}</div>
@@ -56,7 +51,7 @@ export const nonHolyFish = () => {
   const regularFish = [];
   const fishes = getFish();
   for (const fish of fishes) {
-    if (fish.size % 5 != 0 && fish.size % 5 != 0) {
+    if (fish.size % 3 != 0 && fish.size % 5 != 0) {
       regularFish.push(fish);
     }
   }

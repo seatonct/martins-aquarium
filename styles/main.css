@@ -1,22 +1,73 @@
 body {
-    background-color: aqua;
+  background-color: aqua;
+}
+
+h1 {
+  color: seashell;
+  text-shadow: 0 0 3px navy;
 }
 
 #fishSection {
-  border: solid 5px navy;
+  background-color: navy;
+  padding: 20px;
+  margin: 20px;
+}
+
+#locationsSection {
+  background-color: navy;
+  padding: 20px;
+  margin: 20px;
+}
+
+#travelTipsSection {
+  background-color: seashell;
+  border: solid 3px navy;
+  padding: 20px;
+  margin: 20px;
+}
+
+#tankTips {
+  background-color: seashell;
+  border: solid 3px navy;
+  padding: 20px;
+  margin: 20px;
+}
+
+.lightHeading {
+  color: seashell;
 }
 
 #martinsFish {
   display: flex;
   flex-wrap: wrap;
+}
+
+#locations {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .fishCard {
-  padding: 5px;
-  border: solid 3px navy;
-  margin: 10 px;
+  background-color: seashell;
+  color: black;
+  padding: 20px;
+  margin: 20px;
   width: 150px;
+  height: 200px;
 }
 
 .fish-image {
   width: 70%;
+}
+
+.location-image {
+  width: 95%;
+}
+
+.locationCard {
+  background-color: seashell;
+  color: black;
+  padding: 20px;
+  margin: 20px;
+  width: 400px;
 }

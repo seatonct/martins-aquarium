@@ -1,9 +1,3 @@
-/*
- *  To get you started, here's some properties of Bart.
- *  You need to add more properties to complete his
- *  representation as an object. Then add all the other
- *  fish to the collection.
- */
 const database = {
   fish: [
     {
@@ -13,7 +7,7 @@ const database = {
       name: "name: Bart",
       food: "food: crustaceans",
       size: 5,
-      location: "Great Barrier Reef",
+      location: "location: Great Barrier Reef",
     },
     {
       image:
@@ -22,7 +16,7 @@ const database = {
       name: "name: Bloaty",
       food: "food: algae",
       size: 7,
-      location: "Bali",
+      location: "location: Bali",
     },
     {
       image:
@@ -31,7 +25,7 @@ const database = {
       name: "name: Snappy",
       food: "food: fish",
       size: 6,
-      location: "Brazil",
+      location: "location: Brazil",
     },
     {
       image:
@@ -40,7 +34,7 @@ const database = {
       name: "name: Bubba",
       food: "food: kelp",
       size: 43,
-      location: "Jamaica",
+      location: "location: Jamaica",
     },
   ],
   travelTips: [

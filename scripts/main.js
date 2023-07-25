@@ -12,7 +12,8 @@ for (const fish of allFish) {
 
 const fishCollection = document.querySelector("#martinsFish");
 
-fishCollection.innerHTML = FishList();
+fishCollection.innerHTML =
+  FishList(mostHolyFish()) + FishList(soldierFish()) + FishList(nonHolyFish());
 
 const martinsTravelTips = document.querySelector("#travelTipEl");
 
